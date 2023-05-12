@@ -2,7 +2,7 @@ import styles from './Profile.module.css';
 
 export const Stats = ({ stats }) => {
   return (
-    <ul className={styles.stat}>
+    <ul className={styles.stats}>
       <li className={styles.statElem}>
         <span className={styles.label}>Followers</span>
         <span className={styles.quantity}>{stats.followers}</span>
