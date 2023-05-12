@@ -1,11 +1,14 @@
 import { Description } from './Description';
 import { Stats } from './Stats';
-import styles from './Profile.module.css'
+
 import PropTypes from 'prop-types';
+import { Proffile } from './Profile.styled';
+
+
 
 export const Profile = ({ username, tag, location, avatar, stats }) => {
   return (
-    <div className={styles.profile}>
+    <Proffile>
       <Description
         username={username}
         tag={tag}
@@ -13,7 +16,7 @@ export const Profile = ({ username, tag, location, avatar, stats }) => {
         avatar={avatar}
       />
       <Stats stats={stats}/>
-    </div>
+    </Proffile>
   );
 };
 
