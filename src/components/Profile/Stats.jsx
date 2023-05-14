@@ -1,5 +1,4 @@
-import { Stat, StatElem, StatLabel, StatQuntity } from "./Stats.styled";
-
+import { Stat, StatElem, StatLabel, StatQuntity } from './Stats.styled';
 
 export const Stats = ({ stats }) => {
   return (

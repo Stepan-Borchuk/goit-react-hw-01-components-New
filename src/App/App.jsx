@@ -1,5 +1,7 @@
+import { Statistic } from 'components/Statistic/Statistic';
 import { Profile } from '../components/Profile/Profile';
 import user from '../components/Profile/user.json';
+import data from '../components/Statistic/data.json';
 
 import { Box } from './Box';
 
@@ -7,15 +9,15 @@ export const App = () => {
   return (
     <Box
       color="text"
-      p={6}
-      height="100vh"
+      p={4}
+      // height="100vh"
       display="flex"
       justifyContent="center"
       alignItems="center"
-      fontStyle="body"
-      fontWeight='body'
-      fontSize='s'
-      >
+      fontFamily="body"
+      fontWeight="body"
+      fontSize="s"
+      flexDirection="column">
 
       <Profile
         username={user.username}
@@ -24,6 +26,8 @@ export const App = () => {
         avatar={user.avatar}
         stats={user.stats}
       />
+
+      <Statistic title="Upload stats" stats={data} />
     </Box>
   );
 };
