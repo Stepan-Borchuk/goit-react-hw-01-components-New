@@ -2,8 +2,12 @@ import styled from 'styled-components';
 
 export const Stat = styled.ul`
   display: flex;
-  justify-content: space-evenly;
-  background-color: ${p=>p.theme.colors.bg};
+  justify-content: space-between;
+  background-color: ${p => p.theme.colors.background};
+  :not(:last-child) {
+    border-right: ${p => p.theme.borders.normal};
+  }
+ 
 `;
 
 export const StatElem = styled.li`
@@ -12,21 +16,20 @@ export const StatElem = styled.li`
   align-items: center;
   width: 100%;
   height: 100%;
-  padding-top: 20px;
-  padding-bottom: 20px;
-
-  :not(:last-child) {
-    border-right: 1px solid #e6e6e6;
-  }
+  padding-top: ${p => p.theme.space[4]}px;
+  padding-bottom: ${p => p.theme.space[4]}px;
+  
+ 
 `;
 
 export const StatLabel = styled.span`
- font-size: 12px;
-    color: gray;
+  font-size: ${p => p.theme.fontSizes.xs};
+  color: ${p => p.theme.colors.accent};
+
 `;
 
 export const StatQuntity = styled.span`
-    margin-top: 5px;
-    font-weight: 700;
-    font-size: 12px;
+  margin-top: ${p => p.theme.space[2]}px;
+  font-weight: ${p => p.theme.fontWeights.heading};
+  font-size: ${p => p.theme.fontSizes.xs};
 `;

@@ -1,30 +1,29 @@
 import styled from 'styled-components';
 
 export const Descriptin = styled.div`
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: ${p => p.theme.space[4]}px;;
 `;
 
 export const Avatar = styled.img`
-width: 200px;
-height: 200px;
-background-color: ${p=>p.theme.colors.primary};
-border-radius: 50%;
+  width: ${p => p.theme.space[8]}px;
+  height: ${p => p.theme.space[8]}px;
+  background-color: ${p => p.theme.colors.primary};
+  border-radius: ${p => p.theme.radii.avatar};
 `;
 
 export const Name = styled.h2`
-   margin-top: 15px;
-    font-size: 18px;
-    font-weight: 700;
+  font: ${p => p.theme.fonts.heading};
+  margin-top: ${p => p.theme.space[4]}px;
+  font-size: ${p => p.theme.fontSizes.l};
+  font-weight: ${p => p.theme.fontWeights.heading};
 `;
 
 export const Tag = styled.p`
-    margin-top: 5px;
-    font-size: 14px;
-    color: ${p=>p.theme.colors.secondary};
+  margin-top: ${p => p.theme.space[3]}px;
+  font-size: ${p => p.theme.fontSizes.m};
+  color: ${p => p.theme.colors.secondary};
 `;
-
-
