@@ -11,7 +11,7 @@ export const Descriptin = styled.div`
 export const Avatar = styled.img`
 width: 200px;
 height: 200px;
-background-color: rgba(87, 224, 210, 0.276);
+background-color: ${p=>p.theme.colors.primary};
 border-radius: 50%;
 `;
 
@@ -24,7 +24,7 @@ export const Name = styled.h2`
 export const Tag = styled.p`
     margin-top: 5px;
     font-size: 14px;
-    color: rgb(94, 84, 235);
+    color: ${p=>p.theme.colors.secondary};
 `;
 
 

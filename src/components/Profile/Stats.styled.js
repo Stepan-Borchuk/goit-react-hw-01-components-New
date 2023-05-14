@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Stat = styled.ul`
   display: flex;
   justify-content: space-evenly;
-  background-color: #f5f5f5;
+  background-color: ${p=>p.theme.colors.bg};
 `;
 
 export const StatElem = styled.li`
