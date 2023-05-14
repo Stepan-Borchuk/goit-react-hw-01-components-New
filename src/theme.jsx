@@ -35,6 +35,7 @@ export const theme = {
   opacities: {},
   radii: {
     avatar: '50%',
+    xs: '5px',
   },
 //   shadows: {
 //     boxShadow1: 
