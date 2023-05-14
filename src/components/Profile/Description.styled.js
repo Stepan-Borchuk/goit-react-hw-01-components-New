@@ -1,13 +1,5 @@
 import styled from 'styled-components';
 
-export const Descriptin = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: ${p => p.theme.space[4]}px;;
-`;
-
 export const Avatar = styled.img`
   width: ${p => p.theme.space[8]}px;
   height: ${p => p.theme.space[8]}px;

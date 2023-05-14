@@ -9,7 +9,7 @@ export const theme = {
   },
   borders: {
     none: 'none',
-    normal: '1px solid #6d0c0c',
+    normal: '1px solid #609',
   },
   borderStyles: {},
   borderWidths: {},
@@ -36,14 +36,14 @@ export const theme = {
   radii: {
     avatar: '50%',
   },
-  shadows: {
-    boxShadow1: '0px 3px 1px -2px rgba(0, 0, 0, 0.2)',
-    boxShadow2: '0px 2px 2px 0px rgba(0, 0, 0, 0.14)',
-    boxShadow3: '0px 1px 5px 0px rgba(0, 0, 0, 0.12)',
-  },
-  sizes: {},
+//   shadows: {
+//     boxShadow1: 
+//       '0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12) ',
+//     // boxShadow2: '0px 2px 2px 0px rgba(0, 0, 0, 0.14)',
+//     // boxShadow3: '0px 1px 5px 0px rgba(0, 0, 0, 0.12)',
+//   },
+  sizes: [0, 2, 4, 8, 16, 32, 64, 128, 256, 300],
   space: [0, 2, 4, 8, 16, 32, 64, 128, 256, 300],
   transitions: {},
   zIndices: {},
 };
-

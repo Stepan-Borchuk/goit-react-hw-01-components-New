@@ -1,10 +1,22 @@
 import { Profile } from '../components/Profile/Profile';
 import user from '../components/Profile/user.json';
-import { Container } from './App.styled';
+
+import { Box } from './Box';
 
 export const App = () => {
   return (
-    <Container>
+    <Box
+      color="text"
+      p={6}
+      height="100vh"
+      display="flex"
+      justifyContent="center"
+      alignItems="center"
+      fontStyle="body"
+      fontWeight='body'
+      fontSize='s'
+      >
+
       <Profile
         username={user.username}
         tag={user.tag}
@@ -12,6 +24,6 @@ export const App = () => {
         avatar={user.avatar}
         stats={user.stats}
       />
-    </Container>
+    </Box>
   );
 };
