@@ -18,5 +18,5 @@ export const Friends = ({ friends }) => {
 };
 
 Friends.propTypes = {
-  friends: PropTypes.object,
+  friends: PropTypes.array,
 };
