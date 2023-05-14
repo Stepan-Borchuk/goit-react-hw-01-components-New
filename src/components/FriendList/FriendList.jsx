@@ -13,7 +13,9 @@ export const FriendList = ({ friends }) => {
       mt={2}
       boxShadow="0px 3px 1px -2px rgba(166, 9, 9, 0.264), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12)"
       key={friends.id}>
-      <FriendsState state={friends.isOnline}><BsFillCircleFill /></FriendsState>
+      <FriendsState state={friends.isOnline}>
+        <BsFillCircleFill />
+      </FriendsState>
       <FriendsAvatar
         class="avatar"
         src={friends.avatar}
@@ -24,7 +26,6 @@ export const FriendList = ({ friends }) => {
     </Box>
   ));
 };
-
 
 FriendList.propTypes = {
   avatar: PropTypes.string,
